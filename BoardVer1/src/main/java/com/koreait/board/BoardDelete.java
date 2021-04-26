@@ -15,6 +15,8 @@ public class BoardDelete extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String no=request.getParameter("no");
 		Database.list.remove(Integer.parseInt(no));
+		
+		response.sendRedirect("/list");
 	}
 
 }

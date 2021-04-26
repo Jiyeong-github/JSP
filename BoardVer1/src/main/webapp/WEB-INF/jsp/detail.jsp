@@ -6,7 +6,7 @@
     BoardVO vo=(BoardVO) request.getAttribute("data"); //object니까 ㅎ~~, getAttribute 했음 setAttribute 필수
     %> 
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
 <meta charset="UTF-8">
 <title>Detail</title>
@@ -24,6 +24,10 @@
 	</form>
 	
 <a href="/del?no=<%=no %>"><button>삭제</button></a>
+</div>
+
+<div>
+
 </div>
 
 <div>제목:<%=vo.getTitle() %></div>
